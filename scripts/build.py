@@ -99,7 +99,7 @@ def main():
         raise SystemExit("No recorded execution exists. Build without --skip-labs first.")
     package_labs()
     if args.format in ("html", "all"):
-        run([sys.executable, "-m", "sphinx", "-b", "html", "-W", "--keep-going", str(DOCS), str(BUILD / "html")])
+        run([sys.executable, "-m", "sphinx", "-b", "html", "-d", str(BUILD / "doctrees/html"), "-W", "--keep-going", str(DOCS), str(BUILD / "html")])
     if args.format in ("pdf", "all"):
         build_pdf()
     print("Course build completed.")
