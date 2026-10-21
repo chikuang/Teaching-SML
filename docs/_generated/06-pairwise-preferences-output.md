@@ -22,7 +22,7 @@ A beats B, B beats C: undirected graph connected, directed wins strongly connect
 ```
 
 ```{image} ../_static/figures/06-pairwise-preferences.png
-:alt: Executed R experiment for pairwise preferences; numerical results are printed above.
+:alt: Experiment results for pairwise preferences; numerical results are printed above.
 :width: 100%
 ```
 

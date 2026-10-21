@@ -22,7 +22,7 @@ A single fitted-rule comparison is illustrative; repeat training for a method co
 ```
 
 ```{image} ../_static/figures/04-pu-practice.png
-:alt: Executed R experiment for pu practice; numerical results are printed above.
+:alt: Experiment results for pu practice; numerical results are printed above.
 :width: 100%
 ```
 

@@ -8,7 +8,7 @@ project = "Topics of Statistical Learning"
 author = "Chi-Kuang Yeh"
 copyright_year = "2026"
 copyright = f"{copyright_year}, {author}"
-extensions = ["myst_parser", "sphinx_copybutton", "sphinx_design", "code_folding", "chapter_equations"]
+extensions = ["myst_parser", "sphinx_copybutton", "sphinx_design", "code_folding", "chapter_equations", "concept_boxes"]
 exclude_patterns = ["_build", "_generated/**", "_static/**"]
 master_doc = "index"
 language = "en"
@@ -65,14 +65,15 @@ html_copy_source = True
 
 # The same chapter tree and executed examples form the downloadable course book.
 latex_engine = "xelatex"
-latex_documents = [("index", "Topics-of-Statistical-Learning.tex", project, author, "manual", True)]
+latex_documents = [("index", "Topics-of-Statistical-Learning.tex", project, author, "manual", False)]
 latex_show_urls = "no"
 latex_show_pagerefs = True
 latex_domain_indices = False
 latex_elements = {
-    "fontpkg": r"\setmainfont{DejaVu Serif}\setsansfont{DejaVu Sans}\setmonofont{DejaVu Sans Mono}[Scale=0.85]",
+    "fontpkg": r"\setmainfont{DejaVuSerif.ttf}[BoldFont=DejaVuSerif-Bold.ttf,ItalicFont=DejaVuSerif-Italic.ttf,BoldItalicFont=DejaVuSerif-BoldItalic.ttf]\setsansfont{DejaVuSans.ttf}[BoldFont=DejaVuSans-Bold.ttf,ItalicFont=DejaVuSans-Oblique.ttf,BoldItalicFont=DejaVuSans-BoldOblique.ttf]\setmonofont{DejaVuSansMono.ttf}[Scale=0.85,BoldFont=DejaVuSansMono-Bold.ttf,ItalicFont=DejaVuSansMono-Oblique.ttf,BoldItalicFont=DejaVuSansMono-BoldOblique.ttf]",
     "papersize": "letterpaper",
     "pointsize": "11pt",
+    "figure_align": "H",
     "extraclassoptions": "oneside,openany",
     "geometry": r"\usepackage[margin=1in,headheight=26pt]{geometry}",
     "fncychap": "",
@@ -81,8 +82,24 @@ latex_elements = {
     "tableofcontents": r"\renewcommand{\contentsname}{Contents}\tableofcontents",
     "sphinxsetup": r"VerbatimColor={RGB}{247,248,250},VerbatimBorderColor={RGB}{220,225,230},TitleColor={RGB}{48,56,66},InnerLinkColor={RGB}{162,0,110},OuterLinkColor={RGB}{162,0,110}",
     "preamble": r"""
+\usepackage[most]{tcolorbox}
+\usepackage{float}
+\definecolor{coursecore}{HTML}{9B1B68}
+\definecolor{coursemethod}{HTML}{176B72}
+\definecolor{courseboundary}{HTML}{966400}
+\newtcolorbox{coursebox}[2]{enhanced,breakable,
+  colback=course#1!5!white,colframe=course#1,
+  colbacktitle=course#1!12!white,coltitle=course#1!85!black,
+  fonttitle=\bfseries\sffamily,title={#2},
+  boxrule=0.5pt,leftrule=2.5pt,arc=2pt,
+  left=9pt,right=9pt,top=7pt,bottom=7pt,
+  before skip=12pt,after skip=12pt}
 \setcounter{secnumdepth}{-1}
 \setcounter{tocdepth}{1}
+\makeatletter
+\renewcommand{\@pnumwidth}{2em}
+\renewcommand{\@tocrmarg}{3em}
+\makeatother
 % Keep internal equation anchors unique; chapter_equations sets printed numbers.
 \counterwithout{equation}{chapter}
 \fvset{fontsize=\small}

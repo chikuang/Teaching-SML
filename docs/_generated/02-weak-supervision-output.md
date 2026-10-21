@@ -32,7 +32,7 @@ Complementary-label corrected risk for a prediction of A:
 ```
 
 ```{image} ../_static/figures/02-weak-supervision.png
-:alt: Executed R experiment for weak supervision; numerical results are printed above.
+:alt: Experiment results for weak supervision; numerical results are printed above.
 :width: 100%
 ```
 

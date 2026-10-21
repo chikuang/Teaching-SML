@@ -16,7 +16,7 @@ Known variance = 1; coordinates independent; no estimated nuisance parameters.
 ```
 
 ```{image} ../_static/figures/11-selective-inference.png
-:alt: Executed R experiment for selective inference; numerical results are printed above.
+:alt: Experiment results for selective inference; numerical results are printed above.
 :width: 100%
 ```
 

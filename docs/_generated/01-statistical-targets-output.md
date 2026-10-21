@@ -21,7 +21,7 @@ It is not a confidence interval for an individual fitted model's risk.
 ```
 
 ```{image} ../_static/figures/01-statistical-targets.png
-:alt: Executed R experiment for statistical targets; numerical results are printed above.
+:alt: Experiment results for statistical targets; numerical results are printed above.
 :width: 100%
 ```
 

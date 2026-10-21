@@ -15,7 +15,7 @@ The simulator knows means for scoring; the policies do not.
 ```
 
 ```{image} ../_static/figures/09-bandits.png
-:alt: Executed R experiment for bandits; numerical results are printed above.
+:alt: Experiment results for bandits; numerical results are printed above.
 :width: 100%
 ```
 

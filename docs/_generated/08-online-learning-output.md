@@ -22,7 +22,7 @@ Projected OGD, fixed-comparator regret and the deterministic upper bound:
 ```
 
 ```{image} ../_static/figures/08-online-learning.png
-:alt: Executed R experiment for online learning; numerical results are printed above.
+:alt: Experiment results for online learning; numerical results are printed above.
 :width: 100%
 ```
 

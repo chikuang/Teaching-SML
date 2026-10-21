@@ -23,7 +23,7 @@ Preference probability from rewards / policy log ratios:
 ```
 
 ```{image} ../_static/figures/07-contextual-preferences.png
-:alt: Executed R experiment for contextual preferences; numerical results are printed above.
+:alt: Experiment results for contextual preferences; numerical results are printed above.
 :width: 100%
 ```
 

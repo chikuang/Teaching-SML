@@ -21,7 +21,7 @@ Only assumed_sigma = 1 is covered by the independence derivation.
 ```
 
 ```{image} ../_static/figures/14-research-synthesis.png
-:alt: Executed R experiment for research synthesis; numerical results are printed above.
+:alt: Experiment results for research synthesis; numerical results are printed above.
 :width: 100%
 ```
 

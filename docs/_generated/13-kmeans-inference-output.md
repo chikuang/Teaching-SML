@@ -30,7 +30,7 @@ Sixty repetitions are a demonstration, not a high-precision size study.
 ```
 
 ```{image} ../_static/figures/13-kmeans-inference.png
-:alt: Executed R experiment for kmeans inference; numerical results are printed above.
+:alt: Experiment results for kmeans inference; numerical results are printed above.
 :width: 100%
 ```
 

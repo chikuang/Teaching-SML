@@ -25,7 +25,7 @@ Larger samples reduce variability around the misspecified limit, not its bias.
 ```
 
 ```{image} ../_static/figures/05-uu-learning.png
-:alt: Executed R experiment for uu learning; numerical results are printed above.
+:alt: Experiment results for uu learning; numerical results are printed above.
 :width: 100%
 ```
 

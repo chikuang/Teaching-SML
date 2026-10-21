@@ -58,7 +58,7 @@ def execute_labs():
         block = "::::{container} cell_output\n\n```text\n" + output + "\n```\n"
         figure = figures / f"{script.stem}.png"
         if figure.exists():
-            block += f"\n```{{image}} ../_static/figures/{figure.name}\n:alt: Executed R experiment for {script.stem[3:].replace('-', ' ')}; numerical results are printed above.\n:width: 100%\n```\n"
+            block += f"\n```{{image}} ../_static/figures/{figure.name}\n:alt: Experiment results for {script.stem[3:].replace('-', ' ')}; numerical results are printed above.\n:width: 100%\n```\n"
         block += "\n::::\n"
         (generated / f"{script.stem}-output.md").write_text(block)
         records.append({"script": script.name, "sha256": hashlib.sha256(script.read_bytes()).hexdigest(),
@@ -81,7 +81,7 @@ def package_labs():
 
 
 def build_pdf():
-    run([sys.executable, "-m", "sphinx", "-b", "latex", "-W", "--keep-going", str(DOCS), str(BUILD / "latex")])
+    run([sys.executable, "-m", "sphinx", "-b", "latex", "-E", "-W", "--keep-going", str(DOCS), str(BUILD / "latex")])
     run(["latexmk", "-xelatex", "-interaction=nonstopmode", "-halt-on-error", "Topics-of-Statistical-Learning.tex"], cwd=BUILD / "latex", stdout=open(BUILD / "latex-build.log", "w"), stderr=subprocess.STDOUT)
     pdf = BUILD / "latex/Topics-of-Statistical-Learning.pdf"
     (BUILD / "html").mkdir(parents=True, exist_ok=True)
@@ -99,7 +99,7 @@ def main():
         raise SystemExit("No recorded execution exists. Build without --skip-labs first.")
     package_labs()
     if args.format in ("html", "all"):
-        run([sys.executable, "-m", "sphinx", "-b", "html", "-d", str(BUILD / "doctrees/html"), "-W", "--keep-going", str(DOCS), str(BUILD / "html")])
+        run([sys.executable, "-m", "sphinx", "-b", "html", "-E", "-d", str(BUILD / "doctrees/html"), "-W", "--keep-going", str(DOCS), str(BUILD / "html")])
     if args.format in ("pdf", "all"):
         build_pdf()
     print("Course build completed.")

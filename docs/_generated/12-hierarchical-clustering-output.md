@@ -17,7 +17,7 @@ The selective Monte Carlo check is small; its standard error matters.
 ```
 
 ```{image} ../_static/figures/12-hierarchical-clustering.png
-:alt: Executed R experiment for hierarchical clustering; numerical results are printed above.
+:alt: Experiment results for hierarchical clustering; numerical results are printed above.
 :width: 100%
 ```
 

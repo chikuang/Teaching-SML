@@ -31,7 +31,7 @@ A Condorcet-regret target is unavailable for this cyclic example.
 ```
 
 ```{image} ../_static/figures/10-duelling-bandits.png
-:alt: Executed R experiment for duelling bandits; numerical results are printed above.
+:alt: Experiment results for duelling bandits; numerical results are printed above.
 :width: 100%
 ```
 

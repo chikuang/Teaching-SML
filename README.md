@@ -59,3 +59,19 @@ Build and validate first. Copy only the contents of `_build/html/` into the depl
 Preserve existing website files, other teaching directories, and CVs. Never use `hugo --cleanDestinationDir` on the public website checkout. A full Hugo regeneration is not needed to build this course.
 
 The public book is a developed resource; course number, semester, meeting information, and final institutional policies remain subject to an actual offering. No registration or official approval is implied.
+
+## Conceptual supplements and diagrams
+
+Each chapter has a labelled core-idea box and an analysis-check or boundary box,
+plus a supplementary explanation connecting the model to an analysis decision.
+The same MyST source renders these boxes in the web book and as breakable,
+coloured PDF boxes through `docs/_ext/concept_boxes.py`.
+The PDF build uses XeLaTeX, `tcolorbox`, and the DejaVu font files distributed
+with TeX Live. Its opening overview is assembled from the website homepage.
+
+Seven vector flowcharts are provided as SVG for the website and PDF for the book.
+To regenerate them after editing `scripts/build_diagrams.py`, install Matplotlib
+and run that script. The generated pairs are tracked, so an ordinary book build
+does not need Matplotlib. Captions and alternative text describe the same steps
+without relying on colour. Rebuild both formats with `python scripts/build.py --skip-labs` for prose-only edits; preserve the original execution records unless
+the experiments change.

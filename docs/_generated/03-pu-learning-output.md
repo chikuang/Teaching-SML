@@ -26,7 +26,7 @@ The S=0 subset is not the full target feature marginal.
 ```
 
 ```{image} ../_static/figures/03-pu-learning.png
-:alt: Executed R experiment for pu learning; numerical results are printed above.
+:alt: Experiment results for pu learning; numerical results are printed above.
 :width: 100%
 ```
 
