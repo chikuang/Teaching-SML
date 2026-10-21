@@ -1,15 +1,15 @@
 # Topics of Statistical Learning
 
-**Topic Course · Chi-Kuang Yeh · R**
+**Topic Course · Chi-Kuang Yeh**
 
 - Course: https://chikuang.github.io/teaching/statistical-learning/
 - Book: https://chikuang.github.io/teaching/statistical-learning/Topics-of-Statistical-Learning.pdf
 - Canonical source: [chikuang/Teaching-SML](https://github.com/chikuang/Teaching-SML), branch `main`
 - Published output: `chikuang/chikuang.github.io`, `teaching/statistical-learning/`
 
-Fourteen developed chapters cover weak supervision, PU and UU learning, pairwise and contextual preferences, online convex optimisation, bandits, duelling bandits, selective inference, hierarchical clustering, k-means, and research synthesis. Every chapter has derivations, worked examples, a standalone R lab with executed output, exercises, and separately revealable solutions. The course guide preserves a proposed 15-week graduate teaching route, while the book supports independent study.
+Fourteen developed chapters cover weak supervision, PU and UU learning, pairwise and contextual preferences, online convex optimisation, bandits, duelling bandits, selective inference, hierarchical clustering, k-means, and research synthesis. Every chapter has derivations, worked examples, a standalone experiment with executed output, exercises, and separately revealable solutions. The course guide preserves a proposed 15-week graduate teaching route, while the book supports independent study.
 
-The reading interface adapts the author's Teaching-GenAI Sphinx book theme: Waterloo yellow and Mathematics pink, light/dark modes, search, sidebar navigation, folded code, visible results, and separate solutions. Three browser demonstrations provide incomplete-label risk estimation, UCB exploration, and an exact elementary Gaussian selection example. The elementary example is not a cluster-significance calculator.
+Three browser demonstrations provide incomplete-label risk estimation, UCB exploration, and an exact elementary Gaussian selection example. The elementary example is not a cluster-significance calculator.
 
 ## Build
 
